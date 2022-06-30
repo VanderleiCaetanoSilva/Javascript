@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Digite a sua velocidade : </p>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Verificar" onclick="guarda()">
+    <script>
+        function guarda() {
+            var velocidade = window.document.querySelector("input#vel")  
+            window.document.write(`A velocidade atual é de <strong>${velocidade.value} Km por hora.</strong> <br>`)
+            if (Number(velocidade.value) > 50) {
+                window.document.write(`O limite de velocidade é de <strong>50 Km/h.</strong> Você foi <strong>MULTADO !!</strong> <br>`)
+            } 
+            window.document.write("Dirija sempre utilizando cinto de segurança.")
+        }
+    </script> 
+</body>
+</html>
