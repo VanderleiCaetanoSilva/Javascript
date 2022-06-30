@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando DOM</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" name="msg1" class="msg2">Clique em mim !!</div>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")
+        var corpo = window.document.body
+        var msg = window.document.getElementById("msg")
+        var msg1 = window.document.getElementsByName("msg1")
+        var msg2 = window.document.getElementsByClassName("msg2")
+
+        var d = window.document.querySelector("div#msg")  // por ID
+        var d1 = window.document.querySelector("div.msg2") // por CLASSE
+//
+        window.document.write("Ola Mundo !! <br>") 
+        window.document.write(window.document.characterSet + "<br>")
+        window.document.write(window.navigator.appName + "<br>")
+        window.document.write(window.document.URL + "<br>")
+//
+        window.document.write("Esta escrito assim : " + p1[1].innerText + "<br>")
+        window.document.write("Esta escrito assim : " + p1[1].innerHTML + "<br>")
+//        p1[0].style.color = 'blue'  // mudando cor da letra pra azul
+//        corpo.style.background = 'green'  // mudando cor do corpo pra verde
+        msg.style.background = 'yellow'
+        msg.innerText = "Estou Aguardando !!"
+        msg1[0].style.background = 'pink'
+        msg2[0].style.background = 'brown'
+// por seletor
+        d.innerText = "Voltando ao normal"
+        d1.innerText = "Voltando ao normal 2"
+</script>
+</body>
+</html>
