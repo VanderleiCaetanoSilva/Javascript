@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="css/style1.css">
+ </head>
+<body id="fundo">
+    <Header>
+        <h1>Verificador de Idade</h1>
+    </Header>
+    <Main>
+        <section>
+            <div id="texto">
+                <p>Ano de Nascimento 
+                    <input type="number" name="ano" id="ano">
+                </p>
+                <p>Sexo : 
+                    <input type="radio" name="sexo" id="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="feminino">
+                    <label for="feminino">Feminino</label>
+                </p>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </div>
+            <div id="texto1">
+                <p>Preencha os dados e Confirme</p>
+            </div>
+            <div>
+                <img id="imagem" src="" alt="">
+            </div>
+        </section>
+    </Main>
+    <Footer>
+        <p>Desenvolvido por Vanderlei no Curso em Video</p>
+    </Footer>
+    <script src="ex015.js"></script>
+</body>
+</html>
