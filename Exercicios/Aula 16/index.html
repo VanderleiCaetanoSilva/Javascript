@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body id="fundo">
+    <Header>
+        <h1>Analisador de Números</h1>
+    </Header>
+    <Main>
+        <section>
+            <div id="texto">
+                <p>Digite Números (entre 1 e 100): 
+                    <input type="number" name="numero" id="numero">
+                    <input type="button" value="Incluir" onclick="incluir()">
+                </p>
+            </div>
+            <div>
+                <select name="selecao" id="selecao" size="7">
+                    <option value="">.....  Lista de Valores .....</option>
+                </select>
+            </div>
+            <input type="button" value="Finalizar" onclick="analisar()">
+            <div id="texto1">
+                <p>Aguardando números para Analise</p>
+            </div>
+        </section>
+    </Main>
+    <Footer>
+        <p>Desenvolvido por Vanderlei no Curso em Video</p>
+    </Footer>
+    <script src="ex021.js"></script>
+</body>
+</html>
