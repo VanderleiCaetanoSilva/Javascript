@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+header {
+    text-align: center;
+}
+header > h2 {
+    font-size: 0.9em;
+}
+div > img {
+    text-align: left;
+}
+
+div#formulario {
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}

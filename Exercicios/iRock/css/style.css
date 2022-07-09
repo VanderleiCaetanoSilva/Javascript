@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+div {
+    margin-top: 110px;
+    text-align: center;
+}
+
+div > img {
+    cursor: pointer;
+}
