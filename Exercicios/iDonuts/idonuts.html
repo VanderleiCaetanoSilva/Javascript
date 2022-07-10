@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iDonuts</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src=""></script>
+    <script src="donuts.js"></script>
 </head>
-<body>
+<body onload="calculaPedido()">
     <header>
         <h1>Drone's Just-in-Time Donuts</h1>
-        <h2>Todos os Donuts a xx reais cada confeitados ou não !!</h2>
+        <h2 id="txthdr"></h2>
     </header>
-    <div>
-        <img id="time" src="imagens/donuttime.png" alt="iDonut">
-        <form action="">
-            Nome : 
-        </form>
-    </div>
-    
+    <main>
+            <div id="imagem">
+                <img id="time" src="imagens/donuttime.png" alt="iDonut">
+            </div>
+            <div id="formulario">
+                <form action="">
+                    <label>Nome : <input type="text" id="nome" name="nome" value="" onblur="verificaNome()"></input></label>
+                    <label># Donuts sem confeito :  <input type="number" id="donutSemConfeito" name="donutSemConfeito" value="" min="0" onchange="calculaPedido()"></input></label>
+                    <label># Donuts com confeito :  <input type="number" id="donutComConfeito" name="donutComConfeito" value="" min="0" onchange="calculaPedido()"></input></label>
+                    <label>Tempo para retirar : <input type="number" id="tempoRetirada" name="tempoRetirada" value="0"></input></label>
+                    <div id="subtotal">Subtotal :</div></br>
+                    <div id="taxa">Taxa :</div></br>
+                    <div id="total">Total :</div></br>
+                    <input type="button" value="Colocar Pedido" onclick="colocarPedido()"></input>
+                </form>
+            </div>
+    </main>    
 </body>
 </html>
