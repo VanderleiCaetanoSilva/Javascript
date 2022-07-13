@@ -19,10 +19,14 @@
             </div>
             <div id="formulario">
                 <form action="">
-                    <label>Nome : <input type="text" id="nome" name="nome" value="" onblur="verificaNome()"></input></label>
-                    <label># Donuts sem confeito :  <input type="number" id="donutSemConfeito" name="donutSemConfeito" value="" min="0" onchange="calculaPedido()"></input></label>
-                    <label># Donuts com confeito :  <input type="number" id="donutComConfeito" name="donutComConfeito" value="" min="0" onchange="calculaPedido()"></input></label>
-                    <label>Tempo para retirar : <input type="number" id="tempoRetirada" name="tempoRetirada" value="0"></input></label>
+                    <label for="nome">Nome : 
+                        <input type="text" id="nome" name="nome" value="" required autofocus onblur="verificaNome()"></input></label>
+                    <label for="donutSemConfeito"># Donuts sem confeito :  
+                        <input type="number" id="donutSemConfeito" name="donutSemConfeito" value="" min="0" onchange="calculaPedido()"></input></label>
+                    <label for="donutComConfeito"># Donuts com confeito :  
+                        <input type="number" id="donutComConfeito" name="donutComConfeito" value="" min="0" onchange="calculaPedido()"></input></label>
+                    <label for="tempoRetirada">Tempo para retirar : 
+                        <input type="number" id="tempoRetirada" name="tempoRetirada" value="0"></input></label>
                     <div id="subtotal">Subtotal :</div></br>
                     <div id="taxa">Taxa :</div></br>
                     <div id="total">Total :</div></br>

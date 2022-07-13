@@ -35,10 +35,10 @@ function colocarPedido() {
 
     alert(`Sr(a) ${nome}, seu pedido foi incluido e podera ser retirado em ${tempo} minutos !!`);
 
-    document.querySelector("input#nome").value = "";
-    document.querySelector("input#tempoRetirada").value = "";
-    document.querySelector("input#donutSemConfeito").value = "";
-    document.querySelector("input#donutComConfeito").value = "";
+    document.querySelector("input#nome").value = null;
+    document.querySelector("input#tempoRetirada").value = null;
+    document.querySelector("input#donutSemConfeito").value = 0;
+    document.querySelector("input#donutComConfeito").value = 0;
     textoSub.innerHTML = `Subtotal: R$ 0`;
     textoTax.innerHTML = `Taxa: R$ 0`;
     textoTot.innerHTML = `Total: R$ 0`;
