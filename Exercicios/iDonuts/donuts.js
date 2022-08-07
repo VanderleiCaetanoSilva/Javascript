@@ -21,10 +21,10 @@ function calculaPedido() {
     let textoTot = document.querySelector("div#total")
     let textoHdr = document.querySelector("h2#txthdr")
 
-    textoHdr.innerHTML = `Todos os Donuts a ${PRECOUNITARIO} reais cada confeitados ou não !!`  
-    textoSub.innerHTML = `Subtotal: R$ ${subTotal}`;
-    textoTax.innerHTML = `Taxa: R$ ${vlrTaxa}`;
-    textoTot.innerHTML = `Total: R$ ${vlrTotal}`;
+    textoHdr.innerHTML = `Todos os Donuts a ${PRECOUNITARIO.toFixed(2)} reais cada confeitados ou não !!`  
+    textoSub.innerHTML = `Subtotal: R$ ${subTotal.toFixed(2)}`;
+    textoTax.innerHTML = `Taxa: R$ ${vlrTaxa.toFixed(2)}`;
+    textoTot.innerHTML = `Total: R$ ${vlrTotal.toFixed(2)}`;
 }
 function colocarPedido() {
     let nome = document.querySelector("input#nome").value;
@@ -37,11 +37,11 @@ function colocarPedido() {
 
     document.querySelector("input#nome").value = null;
     document.querySelector("input#tempoRetirada").value = null;
-    document.querySelector("input#donutSemConfeito").value = 0;
-    document.querySelector("input#donutComConfeito").value = 0;
-    textoSub.innerHTML = `Subtotal: R$ 0`;
-    textoTax.innerHTML = `Taxa: R$ 0`;
-    textoTot.innerHTML = `Total: R$ 0`;
+    document.querySelector("input#donutSemConfeito").value = 0.00;
+    document.querySelector("input#donutComConfeito").value = 0.00;
+    textoSub.innerHTML = `Subtotal: R$ 0.00`;
+    textoTax.innerHTML = `Taxa: R$ 0.00`;
+    textoTot.innerHTML = `Total: R$ 0.00`;
 
 }
 

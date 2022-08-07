@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iRock a Rocha Virtual</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="cumprimento.js"></script>
+    <script src="cookie.js"></script>
+    <script src="funcoes.js"></script>
 </head>
-<body onload="alert('Olá, eu sou a Rocha de estimação.  Meu nome é iRock !!')">
+<body onload="redimensiona(); cumprimento();" onresize="redimensiona();">
     <div>
-        <img id="rockimg" src="imagens/rock.png" alt="iRock" onclick="cumprimento()">
+        <img id="rockimg" src="imagens/rock.png" alt="iRock" onclick="clicar()">
     </div>
 </body>
 </html>
