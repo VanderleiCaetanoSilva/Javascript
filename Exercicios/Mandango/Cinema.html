@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras de Stick</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="cinema.js"></script>
+</head>
+<body onload="randomiza()">
+    <header>
+        <h1>Sala de Cinema</h1>
+    </header>
+    <main>
+        <div id="imagem">
+            <img id="coluna0" src="imagens/branco.png">
+            <img id="coluna1" src="imagens/1.png">
+            <img id="coluna2" src="imagens/2.png">
+            <img id="coluna3" src="imagens/3.png">
+            <img id="coluna4" src="imagens/4.png">
+            <img id="coluna5" src="imagens/5.png">
+            <img id="coluna6" src="imagens/6.png"> <br>
+            
+            <img id="filae" src="imagens/e.png">
+            <img id="cadeira51" src="imagens/seat_avail.png">
+            <img id="cadeira52" src="imagens/seat_avail.png">
+            <img id="cadeira53" src="imagens/seat_avail.png">
+            <img id="cadeira54" src="imagens/seat_avail.png">
+            <img id="cadeira55" src="imagens/seat_avail.png">
+            <img id="cadeira56" src="imagens/seat_avail.png"> <br>
+
+            <img id="filad" src="imagens/d.png">
+            <img id="cadeira41" src="imagens/seat_avail.png">
+            <img id="cadeira42" src="imagens/seat_avail.png">
+            <img id="cadeira43" src="imagens/seat_avail.png">
+            <img id="cadeira44" src="imagens/seat_avail.png">
+            <img id="cadeira45" src="imagens/seat_avail.png">
+            <img id="cadeira46" src="imagens/seat_avail.png"> <br>
+
+            <img id="filac" src="imagens/c.png">
+            <img id="cadeira31" src="imagens/seat_avail.png">
+            <img id="cadeira32" src="imagens/seat_avail.png">
+            <img id="cadeira33" src="imagens/seat_avail.png">
+            <img id="cadeira34" src="imagens/seat_avail.png">
+            <img id="cadeira35" src="imagens/seat_avail.png">
+            <img id="cadeira36" src="imagens/seat_avail.png"> <br>
+
+            <img id="filab" src="imagens/b.png">
+            <img id="cadeira21" src="imagens/seat_avail.png">
+            <img id="cadeira22" src="imagens/seat_avail.png">
+            <img id="cadeira23" src="imagens/seat_avail.png">
+            <img id="cadeira24" src="imagens/seat_avail.png">
+            <img id="cadeira25" src="imagens/seat_avail.png">
+            <img id="cadeira26" src="imagens/seat_avail.png"> <br>
+
+            <img id="filaa" src="imagens/a.png">
+            <img id="cadeira11" src="imagens/seat_avail.png">
+            <img id="cadeira12" src="imagens/seat_avail.png">
+            <img id="cadeira13" src="imagens/seat_avail.png">
+            <img id="cadeira14" src="imagens/seat_avail.png">
+            <img id="cadeira15" src="imagens/seat_avail.png">
+            <img id="cadeira16" src="imagens/seat_avail.png"> <br>
+            <p id="mensagem">Escolha o assento : </p>
+            <p>Fila : <input type="radio" name="fila" id="a" value="1" checked><label for="fila">A</label>
+                      <input type="radio" name="fila" id="b" value="2"><label for="fila">B</label>
+                      <input type="radio" name="fila" id="c" value="3"><label for="fila">C</label>
+                      <input type="radio" name="fila" id="d" value="4"><label for="fila">D</label>
+                      <input type="radio" name="fila" id="e" value="5"><label for="fila">E</label>
+            </p> 
+            <p>Coluna : <input type="radio" name="coluna" id="1" value="1" checked><label for="coluna">1</label>
+                        <input type="radio" name="coluna" id="2" value="2"><label for="coluna">2</label>
+                        <input type="radio" name="coluna" id="3" value="3"><label for="coluna">3</label>
+                        <input type="radio" name="coluna" id="4" value="4"><label for="coluna">4</label>
+                        <input type="radio" name="coluna" id="5" value="5"><label for="coluna">5</label>
+                        <input type="radio" name="coluna" id="6" value="6"><label for="coluna">6</label>
+            </p> <br>
+
+                <input type="button" id="confirma" value="Confirmar" onclick="reserva(fila,coluna)">
+        </div>
+    </main>    
+</body>
+</html>
