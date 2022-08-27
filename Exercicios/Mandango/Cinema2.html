@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema versão 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="cinema2.js"></script>
+</head>
+<body onload="randomiza()">
+    <header>
+        <h1>Sala de Cinema</h1>
+    </header>
+    <main>
+        <div id="imagem">
+            <img id="coluna0" src="imagens/branco.png">
+            <img id="coluna1" src="imagens/1.png">
+            <img id="coluna2" src="imagens/2.png">
+            <img id="coluna3" src="imagens/3.png">
+            <img id="coluna4" src="imagens/4.png">
+            <img id="coluna5" src="imagens/5.png">
+            <img id="coluna6" src="imagens/6.png"> <br>
+            
+            <img id="filae" src="imagens/e.png">
+            <a href="#" onclick="reserva(5,1)"><img id="cadeira51" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(5,2)"><img id="cadeira52" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(5,3)"><img id="cadeira53" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(5,4)"><img id="cadeira54" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(5,5)"><img id="cadeira55" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(5,6)"><img id="cadeira56" src="imagens/seat_avail.png"></a><br>
+
+            <img id="filad" src="imagens/d.png">
+            <a href="#" onclick="reserva(4,1)"><img id="cadeira41" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(4,2)"><img id="cadeira42" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(4,3)"><img id="cadeira43" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(4,4)"><img id="cadeira44" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(4,5)"><img id="cadeira45" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(4,6)"><img id="cadeira46" src="imagens/seat_avail.png"></a><br>
+
+            <img id="filac" src="imagens/c.png">
+            <a href="#" onclick="reserva(3,1)"><img id="cadeira31" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(3,2)"><img id="cadeira32" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(3,3)"><img id="cadeira33" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(3,4)"><img id="cadeira34" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(3,5)"><img id="cadeira35" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(3,6)"><img id="cadeira36" src="imagens/seat_avail.png"></a><br>
+
+            <img id="filab" src="imagens/b.png">
+            <a href="#" onclick="reserva(2,1)"><img id="cadeira21" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(2,2)"><img id="cadeira22" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(2,3)"><img id="cadeira23" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(2,4)"><img id="cadeira24" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(2,5)"><img id="cadeira25" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(2,6)"><img id="cadeira26" src="imagens/seat_avail.png"></a><br>
+
+            <img id="filaa" src="imagens/a.png">
+            <a href="#" onclick="reserva(1,1)"><img id="cadeira11" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(1,2)"><img id="cadeira12" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(1,3)"><img id="cadeira13" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(1,4)"><img id="cadeira14" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(1,5)"><img id="cadeira15" src="imagens/seat_avail.png"></a>
+            <a href="#" onclick="reserva(1,6)"><img id="cadeira16" src="imagens/seat_avail.png"></a><br>
+            <p id="mensagem">Click no assento para Selecionar</p>
+            <input type="button" id="confirma" value="Confirmar" onclick="conclui()">
+        </div>
+        <div id="legenda">
+            <p><strong>Legenda</strong></p>
+            <img id="disponivel" src="imagens/seat_avail.png"> &nbsp Disponivel<br>
+            <img id="disponivel" src="imagens/seat_unavail.png"> &nbsp Indisponivel<br>
+            <img id="disponivel" src="imagens/seat_select.png"> &nbsp Reservada
+        </div>
+    </main>    
+</body>
+</html>

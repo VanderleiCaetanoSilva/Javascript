@@ -28,6 +28,23 @@ div#imagem {
     left: 15px;
 }
 
+div#legenda {
+    position: absolute;
+    top: 405px;
+    left: 15px;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+div#legenda > p {
+    padding-left: 3px;
+}
+
+img#disponivel {
+    height: 20px;
+    width: 20px;
+}
+
 img {
     height: 50px;
     width: 50px;
